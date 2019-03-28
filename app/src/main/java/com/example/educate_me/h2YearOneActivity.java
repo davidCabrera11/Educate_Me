@@ -51,12 +51,6 @@ public class h2YearOneActivity extends AppCompatActivity {
         final MediaPlayer clap_h2 = MediaPlayer.create(this,R.raw.clap_h2);
         final MediaPlayer slip_h2 = MediaPlayer.create(this,R.raw.slip_h2);
 
-        //Sounds of question Image
-
-
-        //Sound related to the question
-
-
         //set text parts to the first question
         textFillInH2.setText(textFill[index]);
         textOption1.setText(textOpt1[index]);
