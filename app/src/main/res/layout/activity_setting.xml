@@ -14,7 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_above="@id/textAccount"
+        android:layout_marginBottom="20dp"
         android:textColor="@color/colorText"
+        android:textSize="26sp"
         android:text="@string/settings" />
     <TextView
         android:id="@+id/textAccount"
@@ -22,22 +24,28 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/textSound"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
         android:textColor="@color/colorText"
+        android:textSize="26sp"
         android:text="@string/accountmangement" />
     <TextView
         android:id="@+id/textSound"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/textNotifications"
-        android:layout_centerHorizontal="true"
+         android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
         android:textColor="@color/colorText"
+        android:textSize="26sp"
         android:text="@string/sound" />
     <TextView
         android:id="@+id/textNotifications"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textSound"
+        android:layout_marginBottom="20dp"
         android:textColor="@color/colorText"
+        android:textSize="26sp"
         android:text="@string/notification" />
     <TextView
         android:id="@+id/textContact"
@@ -46,6 +54,7 @@
         android:layout_below="@id/textNotifications"
         android:layout_centerHorizontal="true"
         android:textColor="@color/colorText"
+        android:textSize="26sp"
         android:text="@string/contact"/>
 
 

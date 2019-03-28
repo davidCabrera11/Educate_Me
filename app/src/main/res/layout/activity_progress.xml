@@ -12,9 +12,28 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/imageBarGraph"
+        android:layout_marginBottom="100dp"
         android:textColor="@color/colorText"
+        android:textSize="26sp"
         android:text="@string/progress" />
+
+    <ImageView
+        android:id="@+id/imageBarGraph"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/bargraph"/>
+
+    <ImageView
+        android:id="@+id/imageBoat"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/imageBarGraph"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/boat"/>
 
 
 </RelativeLayout>
