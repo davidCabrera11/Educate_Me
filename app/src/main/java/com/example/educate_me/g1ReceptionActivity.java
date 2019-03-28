@@ -74,10 +74,31 @@ public class g1ReceptionActivity extends AppCompatActivity {
         textQuestionG1_Part3.setText(questionG1Part3[index]);
 
 
+        imgBtnPictureG1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //set media player & play sound
+                listen_dog.start();
+            }
+        });
+
+        //Plays the sound related to the question
+        imgBtnQuestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dog.start();
+                
+            }
+        });
+
+
+
 
         textQuestionG1_Part1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
 
               //  Toast.makeText(getApplicationContext(), "Part1", Toast.LENGTH_SHORT).show();
 
@@ -170,21 +191,7 @@ public class g1ReceptionActivity extends AppCompatActivity {
             }
         });
 
-        imgBtnPictureG1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //set media player & play sound
-                listen_dog.start();
-            }
-        });
 
-        //Plays the sound related to the question
-        imgBtnQuestion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dog.start();
-            }
-        });
 
 
         btnRestart.setOnClickListener(new View.OnClickListener() {

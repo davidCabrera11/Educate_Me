@@ -1,5 +1,6 @@
 package com.example.educate_me;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,6 +41,11 @@ public class h2YearOneActivity extends AppCompatActivity {
         imageH2 = findViewById(R.id.imageH2);
 
         //Gets Sound from folder raw in resources
+        final MediaPlayer grab_h2 = MediaPlayer.create(this,R.raw.grab_h2);
+        final MediaPlayer spill_h2 = MediaPlayer.create(this,R.raw.spill_h2);
+        final MediaPlayer cliff_h2 = MediaPlayer.create(this,R.raw.cliff_h2);
+        final MediaPlayer clap_h2 = MediaPlayer.create(this,R.raw.clap_h2);
+        final MediaPlayer slip_h2 = MediaPlayer.create(this,R.raw.slip_h2);
 
         //Sounds of question Image
 
