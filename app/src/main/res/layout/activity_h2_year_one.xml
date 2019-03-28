@@ -49,23 +49,29 @@
         app:srcCompat="@drawable/ic_volume_up_black_24dp" />
 
     <TextView
-        android:id="@+id/textOption1"
+        android:id="@+id/textOption1_H2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textFillInH2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="20dp"
         android:text="gl"
         android:textColor="@color/colorText"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textOption2"
+        android:id="@+id/textOption2_H2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textOption1"
+        android:layout_below="@id/textOption1_H2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="20dp"
          android:text="tr"
         android:textColor="@color/colorText"
         android:textSize="20sp" />
