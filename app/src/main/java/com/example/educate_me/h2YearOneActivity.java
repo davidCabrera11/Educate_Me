@@ -141,7 +141,8 @@ public class h2YearOneActivity extends AppCompatActivity {
                 textOption1.setText(textOpt1[index]);
                 textOption2.setText(textOpt2[index]);
                 textFillInH2.setText(textFill[index]);
-                
+                changeImage(index);
+
             }
         });
 
@@ -151,7 +152,6 @@ public class h2YearOneActivity extends AppCompatActivity {
 
     //Changes image related to the question
     public void changeImage(int index){
-
 
 
         switch (index){
