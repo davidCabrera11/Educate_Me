@@ -36,13 +36,14 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="@string/progress" />
+
     <Button
         android:id="@+id/settingBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/progressBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="50dp"
         android:text="@string/settings" />
 
     <TextView
@@ -55,6 +56,14 @@
         android:textColor="@color/colorText"
         android:textAlignment="center"
         android:text="@string/enterprise" />
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:alpha="0.50"
+        app:srcCompat="@drawable/logo" />
 
 
 </RelativeLayout>

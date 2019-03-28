@@ -25,7 +25,7 @@
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/textKeyStage"
-        android:layout_margin="25dp"
+        android:layout_margin="10dp"
         app:srcCompat="@drawable/reception" />
 
     <ImageView
@@ -33,7 +33,7 @@
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageReception"
-        android:layout_margin="25dp"
+        android:layout_margin="15dp"
         app:srcCompat="@drawable/yearone" />
 
     <ImageView
@@ -41,8 +41,49 @@
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageYearOne"
-        android:layout_margin="25dp"
+        android:layout_margin="15dp"
         app:srcCompat="@drawable/yeartwo" />
+
+    <ImageView
+        android:id="@+id/imageYearThree"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageYearTwo"
+        android:layout_margin="15dp"
+        app:srcCompat="@drawable/year3" />
+
+    <ImageView
+        android:id="@+id/imageYearFour"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageYearThree"
+        android:layout_margin="15dp"
+        app:srcCompat="@drawable/year4" />
+
+    <ImageView
+        android:id="@+id/imageYearFive"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageYearFour"
+        android:layout_margin="15dp"
+        app:srcCompat="@drawable/year5" />
+
+    <ImageView
+        android:id="@+id/imageYearSix"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageYearFive"
+        android:layout_margin="15dp"
+        app:srcCompat="@drawable/year6" />
+
+    <ImageView
+        android:id="@+id/imagePiranha"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/imageYearFive"
+        android:layout_toRightOf="@id/imageYearSix"
+        android:layout_marginLeft="80dp"
+        app:srcCompat="@drawable/cartoon_piranha" />
 
 
 </RelativeLayout>

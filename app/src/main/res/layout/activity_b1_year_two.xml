@@ -10,11 +10,11 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textQuestion_B1Y2"
         android:layout_width="200dp"
         android:layout_height="54dp"
         android:layout_centerHorizontal="true"
-        android:layout_above="@id/imageButtonVolume"
+        android:layout_above="@id/imageButtonVolumeB1Y2"
         android:layout_marginBottom="10dp"
         android:text="@string/b1QuestionYeartwo"
         android:textAlignment="center"
@@ -22,10 +22,10 @@
         android:textSize="22dp" />
 
     <ImageButton
-        android:id="@+id/imageButtonVolume"
+        android:id="@+id/imageButtonVolumeB1Y2"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_above="@id/imageView2"
+        android:layout_above="@id/imageViewB1Y2"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
         android:background="@color/colorGrid"
@@ -33,58 +33,58 @@
 
 
     <ImageButton
-        android:id="@+id/imageButtonVolume2"
+        android:id="@+id/imageButtonVolume1_B1Y"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_below="@id/imageButtonVolume"
-        android:layout_toLeftOf="@id/imageView2"
+        android:layout_below="@id/imageButtonVolumeB1Y2"
+        android:layout_toLeftOf="@id/imageViewB1Y2"
         android:layout_marginTop="35dp"
         android:layout_marginRight="10dp"
         android:background="@color/colorGrid"
         app:srcCompat="@drawable/ic_volume_up_black_24dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageViewB1Y2"
         android:layout_width="105dp"
         android:layout_height="105dp"
         android:layout_centerInParent="true"
         android:layout_marginBottom="1dp"
-        app:srcCompat="@android:drawable/btn_star" />
+        app:srcCompat="@drawable/name1" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView2_B1Y2"
         android:layout_width="105dp"
         android:layout_height="105dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/imageView2"
+        android:layout_below="@id/imageViewB1Y2"
         android:layout_marginBottom="0dp"
-        app:srcCompat="@android:drawable/btn_star" />
+        app:srcCompat="@drawable/name2" />
 
     <ImageButton
-        android:id="@+id/imageButtonVolume4"
+        android:id="@+id/imageButtonVolume2_B1Y"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_below="@id/imageView2"
-        android:layout_toLeftOf="@id/imageView3"
+        android:layout_below="@id/imageViewB1Y2"
+        android:layout_toLeftOf="@id/imageView2_B1Y2"
         android:layout_marginTop="35dp"
         android:layout_marginRight="10dp"
         android:background="@color/colorGrid"
         app:srcCompat="@drawable/ic_volume_up_black_24dp" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageView3_B1Y2"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:layout_below="@id/imageView3"
+        android:layout_below="@id/imageView2_B1Y2"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@android:drawable/btn_star" />
+        app:srcCompat="@drawable/name3"/>
 
     <ImageButton
-        android:id="@+id/imageButtonVolume5"
+        android:id="@+id/imageButtonVolume3_B1Y"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_below="@id/imageView3"
-        android:layout_toLeftOf="@id/imageView4"
+        android:layout_below="@id/imageView2_B1Y2"
+        android:layout_toLeftOf="@id/imageView3_B1Y2"
         android:layout_marginTop="35dp"
         android:layout_marginRight="10dp"
         android:background="@color/colorGrid"
