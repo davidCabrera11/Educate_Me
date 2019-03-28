@@ -74,7 +74,7 @@ public class o1YearTwoActivity extends AppCompatActivity {
                          textOption1.setText(textOpt1[index]);
                          textOption2.setText(textOpt2[index]);
                          textQuestion.setText(textQst[index]);
-                         //changeImage(index);
+                         changeImage(index);
                          //playSound(grab_h2,spill_h2,cliff_h2,clap_h2,slip_h2);
 
                      }else {
@@ -106,7 +106,7 @@ public class o1YearTwoActivity extends AppCompatActivity {
                          textOption1.setText(textOpt1[index]);
                          textOption2.setText(textOpt2[index]);
                          textQuestion.setText(textQst[index]);
-                         //changeImage(index);
+                         changeImage(index);
                          //playSound(grab_h2,spill_h2,cliff_h2,clap_h2,slip_h2);
 
                      }else {
@@ -123,6 +123,30 @@ public class o1YearTwoActivity extends AppCompatActivity {
              }
          });
 
+
+
+    }
+
+
+    public void changeImage(int index){
+
+        switch (index){
+            case 0:
+                imageQuestion.setImageResource(R.drawable.cry_o1);
+                break;
+            case 1:
+                imageQuestion.setImageResource(R.drawable.wins_o1);
+                break;
+            case 2:
+                imageQuestion.setImageResource(R.drawable.hops_o1);
+                break;
+            case 3:
+                imageQuestion.setImageResource(R.drawable.naps_o1);
+                break;
+            case 4:
+                imageQuestion.setImageResource(R.drawable.wag_o1);
+                break;
+        }
 
 
     }
