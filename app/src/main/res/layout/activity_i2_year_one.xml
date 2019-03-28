@@ -30,8 +30,8 @@
 
     <ImageButton
         android:id="@+id/imageButtonVolumeI2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
          android:layout_centerInParent="true"
         android:background="@color/colorGrid"
         app:srcCompat="@drawable/ic_volume_up_black_24dp" />

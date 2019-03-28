@@ -57,6 +57,13 @@ public class i2YearOneActivity extends AppCompatActivity {
         textOption2.setText(textOpt2[index]);
 
 
+        imgVolI2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pat_i2.start();
+            }
+        });
+
 
         textOption1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,10 +131,10 @@ public class i2YearOneActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                index =0;
-
+                index = 0;
                 textOption1.setText(textOpt1[index]);
                 textOption2.setText(textOpt2[index]);
+                changeImage(index);
 
             }
         });
@@ -160,23 +167,31 @@ public class i2YearOneActivity extends AppCompatActivity {
     public  void playSound(final MediaPlayer pat,final MediaPlayer jam,final MediaPlayer tag,
                            final MediaPlayer bad,final MediaPlayer ran){
 
-        switch (index){
-            case 0:
-                pat.start();
-                break;
-            case 1:
-                jam.start();
-                break;
-            case 2:
-                tag.start();
-                break;
-            case 3:
-                bad.start();
-                break;
-            case 4:
-                ran.start();
-                break;
-        }
+
+        imgVolI2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                switch (index){
+                    case 0:
+                        pat.start();
+                        break;
+                    case 1:
+                        jam.start();
+                        break;
+                    case 2:
+                        tag.start();
+                        break;
+                    case 3:
+                        bad.start();
+                        break;
+                    case 4:
+                        ran.start();
+                        break;
+                }
+
+            }
+        });
 
     }
 }
