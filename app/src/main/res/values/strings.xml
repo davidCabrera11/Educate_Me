@@ -1,0 +1,52 @@
+<resources>
+
+    <!--String values for Main Activity Layout-->
+    <string name="app_name">Educate_Me</string>
+    <string name="titleApp">Educate Me</string>
+    <string name="start">Start</string>
+    <string name="selectkeystage">Choose your Keystage</string>
+    <string name="progress">Progress</string>
+    <string name="settings">Settings</string>
+    <string name="enterprise">Jabar Enterprises 2019</string>
+    <string name="titleggamechooser">Choose your Game</string>
+    <string name="sumbit">Sumbit</string>
+    <string name="restart">Restart</string>
+
+
+    <!--String values for SelectKeyStage Activity Layout-->
+
+
+    <!--String values for Progress Activity Layout-->
+
+
+    <!--String values for Settings Activity Layout-->
+    <string name="accountmangement">Account Managments</string>
+    <string name="sound">Sound</string>
+    <string name="notification">Allow Notifications</string>
+    <string name="contact">Contact Us</string>
+
+
+    <!--String values for Reception Activity Layout-->
+    <string name="b1gameReception">Find the letter in the alphabet: lowercase</string>
+    <string name="g1game">Find a word in a sentence</string>
+    <string name="beginGame">Begin</string>
+    <string name="b1Question">Find the letter</string>
+    <string name="g1Question">Listen to the sentence. Then, find the word in the sentence.</string>
+    <string name="correctAnswers">Correct : </string>
+    <string name="incorrectAnswers">Incorrect : </string>
+
+    <!--String values for YearOne Activity Layout-->
+    <string name="h2game">Complete the word with the right initial consonant blend</string>
+    <string name="i2game">Choose the short a word that matches the picture</string>
+    <string name="h2Question">Complete the word to match the picture</string>
+    <string name="i2Question">Which word matches the picture ?</string>
+
+
+    <!--String values for YearTwo Activity Layout-->
+    <string name="b1gameYear2">Choose the picture that rhymes with the word</string>
+    <string name="o1game">Complete the sentence with an action verb to match the picture</string>
+    <string name="b1QuestionYeartwo">Which word rhymes with 5 ?</string>
+    <string name="o1Question">Complete the sentence to match the picture</string>
+
+
+</resources>

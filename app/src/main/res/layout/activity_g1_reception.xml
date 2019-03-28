@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".g1ReceptionActivity">
+
+    <TextView
+        android:id="@+id/textQuestionG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imagePicG1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Listen to the sentence. Then, find the word in the sentence"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPictureG1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@id/imagePicG1"
+        android:layout_below="@id/textQuestionG1"
+         android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="55dp"
+        android:background="@color/colorGrid"
+        app:srcCompat="@drawable/ic_volume_up_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imagePicG1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/textSpaceHolderG1"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/dog_g1" />
+
+    <TextView
+        android:id="@+id/textSpaceHolderG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="TextView" />
+
+
+    <TextView
+        android:id="@+id/textQuestionG1_Part1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSpaceHolderG1"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/textQuestionG1_Part2"
+        android:text="TextView"
+        android:textColor="@color/colorSelectText"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textQuestionG1_Part2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSpaceHolderG1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="@color/colorSelectText"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textQuestionG1_Part3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSpaceHolderG1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/textQuestionG1_Part2"
+        android:text="TextView"
+        android:textColor="@color/colorSelectText"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonQuestionG1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textQuestionG1_Part2"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="70dp"
+        android:background="@color/colorGrid"
+        app:srcCompat="@drawable/ic_volume_up_black_24dp" />
+
+    <Button
+        android:id="@+id/buttonRestartG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageButtonQuestionG1"
+        android:layout_marginTop="25dp"
+        android:text="@string/restart"/>
+
+
+</RelativeLayout>

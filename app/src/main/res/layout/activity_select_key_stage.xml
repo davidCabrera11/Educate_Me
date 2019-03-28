@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".SelectKeyStageActivity">
+
+    <TextView
+        android:id="@+id/textKeyStage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:text="@string/selectkeystage"/>
+
+    <ImageView
+        android:id="@+id/imageReception"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textKeyStage"
+        android:layout_margin="25dp"
+        app:srcCompat="@drawable/reception" />
+
+    <ImageView
+        android:id="@+id/imageYearOne"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageReception"
+        android:layout_margin="25dp"
+        app:srcCompat="@drawable/yearone" />
+
+    <ImageView
+        android:id="@+id/imageYearTwo"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageYearOne"
+        android:layout_margin="25dp"
+        app:srcCompat="@drawable/yeartwo" />
+
+
+</RelativeLayout>

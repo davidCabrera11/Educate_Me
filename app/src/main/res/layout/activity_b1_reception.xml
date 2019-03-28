@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".b1ReceptionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:background="@color/colorBackground">
+
+        <TextView
+            android:id="@+id/textQuestionB1Reception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             android:text="@string/b1Question"
+            android:textColor="@color/colorText"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/imageButtonVolume"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toLeftOf="@id/textQuestionB1Reception"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            android:background="@color/colorGrid"
+            app:srcCompat="@drawable/ic_volume_up_black_24dp" />
+
+        <Button
+            android:id="@+id/buttonRestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+            android:layout_marginLeft="120dp"
+            android:layout_toRightOf="@id/textCorrectB1Reception"
+            android:layout_below="@id/textQuestionB1Reception"
+             android:text="@string/restart" />
+
+        <TextView
+            android:id="@+id/textCorrectB1Reception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_below="@id/textQuestionB1Reception"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/colorText"
+            android:text="@string/correctAnswers"/>
+
+        <TextView
+            android:id="@+id/textIncorrectB1Reception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textCorrectB1Reception"
+             android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorText"
+            android:text="@string/incorrectAnswers" />
+
+
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridAlphabet"
+        android:numColumns="auto_fit"
+        android:background="@color/colorGrid"
+        android:padding="2dp"
+        android:gravity="left"
+        android:columnWidth="80dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4">
+    </GridView>
+
+
+
+
+
+</LinearLayout>
+
