@@ -73,7 +73,7 @@ public class g1ReceptionActivity extends AppCompatActivity {
         textQuestionG1_Part2.setText(questionG1Part2[index]);
         textQuestionG1_Part3.setText(questionG1Part3[index]);
 
-
+        //set sounds to the first question
         imgBtnPictureG1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,7 +87,7 @@ public class g1ReceptionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dog.start();
-                
+
             }
         });
 

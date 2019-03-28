@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,6 +16,7 @@ public class h2YearOneActivity extends AppCompatActivity {
     TextView textFillInH2, textOption1, textOption2;
     ImageButton imgVolH2;
     ImageView imageH2;
+    Button btnRestartH2;
 
     static final String[] textFill ={"__ab","__ill","__ap","__iff","__ip"};
 
@@ -35,6 +37,8 @@ public class h2YearOneActivity extends AppCompatActivity {
         textFillInH2 = findViewById(R.id.textFillInH2);
         textOption1 = findViewById(R.id.textOption1_H2);
         textOption2 = findViewById(R.id.textOption2_H2);
+
+        btnRestartH2 = findViewById(R.id.buttonRestartH2);
 
         imgVolH2 = findViewById(R.id.imageButtonVolumeH2);
 
@@ -58,6 +62,15 @@ public class h2YearOneActivity extends AppCompatActivity {
         textOption1.setText(textOpt1[index]);
         textOption2.setText(textOpt2[index]);
 
+        imgVolH2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                grab_h2.start();
+
+            }
+        });
+
 
         textOption1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +87,7 @@ public class h2YearOneActivity extends AppCompatActivity {
                         textOption2.setText(textOpt2[index]);
                         textFillInH2.setText(textFill[index]);
                         changeImage(index);
+                        playSound(grab_h2,spill_h2,cliff_h2,clap_h2,slip_h2);
 
                     }else {
 
@@ -104,6 +118,7 @@ public class h2YearOneActivity extends AppCompatActivity {
                         textOption2.setText(textOpt2[index]);
                         textFillInH2.setText(textFill[index]);
                         changeImage(index);
+                        playSound(grab_h2,spill_h2,cliff_h2,clap_h2,slip_h2);
 
 
 
@@ -118,6 +133,20 @@ public class h2YearOneActivity extends AppCompatActivity {
                 }
             }
         });
+
+        btnRestartH2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                index = 0;
+                textOption1.setText(textOpt1[index]);
+                textOption2.setText(textOpt2[index]);
+                textFillInH2.setText(textFill[index]);
+                
+            }
+        });
+
+
+
     }
 
     //Changes image related to the question
@@ -142,6 +171,42 @@ public class h2YearOneActivity extends AppCompatActivity {
                 imageH2.setImageResource(R.drawable.slip_h2);
                 break;
         }
+
+    }
+
+
+    public void playSound(final MediaPlayer grab,final MediaPlayer spill,final MediaPlayer cliff,
+                          final MediaPlayer clap,final MediaPlayer slip){
+
+
+        imgVolH2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                switch (index){
+                    case 0:
+                        grab.start();
+                        break;
+                    case 1:
+                        spill.start();
+                        break;
+                    case 2:
+                        clap.start();
+
+                        break;
+                    case 3:
+                        cliff.start();
+                        break;
+                    case 4:
+                        slip.start();
+                        break;
+                }
+
+
+            }
+        });
+
 
     }
 }
