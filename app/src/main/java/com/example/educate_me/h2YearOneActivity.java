@@ -56,6 +56,7 @@ public class h2YearOneActivity extends AppCompatActivity {
         textOption1.setText(textOpt1[index]);
         textOption2.setText(textOpt2[index]);
 
+        //Sets sound to first question image
         imgVolH2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
