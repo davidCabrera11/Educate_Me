@@ -44,8 +44,6 @@ public class i2YearOneActivity extends AppCompatActivity {
 
         btnRestartI2 = findViewById(R.id.buttonRestartI2);
 
-
-
         //Gets Sound from folder raw in resources
         final MediaPlayer pat_i2 = MediaPlayer.create(this,R.raw.pat_i2);
         final MediaPlayer jam_i2 = MediaPlayer.create(this,R.raw.jam_i2);
@@ -56,14 +54,12 @@ public class i2YearOneActivity extends AppCompatActivity {
         textOption1.setText(textOpt1[index]);
         textOption2.setText(textOpt2[index]);
 
-
         imgVolI2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pat_i2.start();
             }
         });
-
 
         textOption1.setOnClickListener(new View.OnClickListener() {
             @Override
